@@ -2,19 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\models\Product;
+use App\Models\models\ProductCategory;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class ProductCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
-        //
+        return view('website.backend.productcategory.index');
     }
 
     /**
@@ -24,7 +25,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('website.backend.productcategory.create');
     }
 
     /**
@@ -41,10 +42,10 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\models\Product  $product
+     * @param  \App\Models\models\ProductCategory  $productCategory
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show(ProductCategory $productCategory)
     {
         //
     }
@@ -52,22 +53,22 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\models\Product  $product
+     * @param  \App\Models\models\ProductCategory  $productCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $product)
+    public function edit(ProductCategory $productCategory)
     {
-        //
+
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\models\Product  $product
+     * @param  \App\Models\models\ProductCategory  $productCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, ProductCategory $productCategory)
     {
         //
     }
@@ -75,11 +76,11 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\models\Product  $product
+     * @param  \App\Models\models\ProductCategory  $productCategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    public function destroy(ProductCategory $productCategory)
     {
-        //
+
     }
 }

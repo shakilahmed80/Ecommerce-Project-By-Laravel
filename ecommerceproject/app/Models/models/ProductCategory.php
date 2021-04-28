@@ -7,13 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProductCategory extends Model
 {
-    protected $fillable=['brand_name',
-    'status','slug'];
+    protected $fillable=['brand_name','status','slug'];
 
-    public function products(){
+public function products(){
 
-        return $this->hasMany('App\models\Product');
+    return $this -> hasMany('App\models\Product');
 }
-
 
 }
